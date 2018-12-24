@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/genre_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/viewColor"
+        android:padding="12dp"
+        android:textSize="18sp"
+        tools:text="Comedy"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textColorSecondary" />
+
+</LinearLayout>

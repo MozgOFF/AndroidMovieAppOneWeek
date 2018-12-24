@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "193559424438",
+    "firebase_url": "https://themoviedb-5770f.firebaseio.com",
+    "project_id": "themoviedb-5770f",
+    "storage_bucket": "themoviedb-5770f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193559424438:android:58868709ffc52f7a",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193559424438-f5kd6e84lcq9acu2nu2vdi6pqiqat44c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDavPcvXJ_6jUxwAiOvCZt6v7mJ97BN9jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

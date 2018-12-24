@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".activity.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbarColor"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:text="Unlock all the features"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/register_email"
+        android:textSize="20sp"
+        android:background="@color/viewColor"
+        android:drawablePadding="12dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:hint="Email"
+        android:textColor="@color/textColorPrimary"
+        android:textColorHint="@color/textColorSecondary"
+        android:maxLines="1"
+        />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password"
+        android:textSize="20sp"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/viewColor"
+        android:drawablePadding="12dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:hint="Password"
+        android:textColorHint="@color/textColorSecondary"
+        android:maxLines="1"
+        />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password_confirm"
+        android:textSize="20sp"
+        android:textColor="@color/textColorPrimary"
+        android:background="@color/viewColor"
+        android:drawablePadding="12dp"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:hint="Confirm password"
+        android:textColorHint="@color/textColorSecondary"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:id="@+id/register_register_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/backgroundColor"
+        android:text="Sign up"
+        />
+
+</LinearLayout>
