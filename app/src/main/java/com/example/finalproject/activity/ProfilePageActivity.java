@@ -160,7 +160,7 @@ public class ProfilePageActivity extends AppCompatActivity
             Toast.makeText(this, "Sorry, no backdrop for latest movie!",
                     Toast.LENGTH_SHORT).show();
         } else {
-            Picasso.with(mImageView.getContext())
+            Picasso.get()
                     .load(MovieService.IMAGE_ENDPOINT + movieDetails.getBackdropPath())
                     .into(mImageView);
         }

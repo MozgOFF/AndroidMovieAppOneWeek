@@ -203,14 +203,15 @@ public class MovieItemActivity extends AppCompatActivity implements MoviesLoader
         mAvgVote.setText("Average vote: " + movieDetails.getVoteAverage());
 
 
-        Picasso.with(mImageView.getContext())
+        Picasso.get()
                 .load(MovieService.IMAGE_ENDPOINT + movieDetails.getPosterPath())
                 .into(mImageView);
 
-        Picasso.with(mPosterItem.getContext())
+        Picasso.get()
                 .load(MovieService.IMAGE_ENDPOINT + movieDetails.getBackdropPath())
                 .into(mPosterItem);
 
+        Log.d(TAG, "onMovieDetailsLoaded: backdrop: " + movieDetails.getBackdropPath());
 
     }
 

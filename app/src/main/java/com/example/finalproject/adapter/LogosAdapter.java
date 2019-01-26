@@ -65,7 +65,7 @@ public class LogosAdapter extends RecyclerView.Adapter<LogosAdapter.LogosViewHol
         public void bindLogo(ProductionCompany productionCompany) {
 
             mTextView.setText(productionCompany.getName());
-            Picasso.with(itemView.getContext())
+            Picasso.get()
                     .load(MovieService.IMAGE_ENDPOINT + productionCompany.getLogoPath())
                     .into(mImageView);
         }

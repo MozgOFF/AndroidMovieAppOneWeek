@@ -119,7 +119,7 @@ public class RecommendationsAdapter extends RecyclerView.Adapter<Recommendations
             mRatingView.setText(String.valueOf(result.getVoteAverage()));
             mReleaseDateView.setText(result.getReleaseDate());
 
-            Picasso.with(itemView.getContext())
+            Picasso.get()
                     .load(MovieService.IMAGE_ENDPOINT + result.getPosterPath())
                     .into(mBackdrop);
         }

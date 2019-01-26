@@ -67,7 +67,7 @@ public class CreditsAdapter extends RecyclerView.Adapter<CreditsAdapter.CreditsV
         public void bindCredit(Cast cast) {
 
             mTextView.setText(cast.getCharacter());
-            Picasso.with(itemView.getContext())
+            Picasso.get()
                     .load(MovieService.IMAGE_ENDPOINT + cast.getProfilePath())
                     .into(mImageView);
             mTextView2.setText(cast.getName());

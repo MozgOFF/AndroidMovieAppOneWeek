@@ -116,7 +116,7 @@ public class SimilarAdapter extends RecyclerView.Adapter<SimilarAdapter.SimilarV
             mRatingView.setText(String.valueOf(result.getVoteAverage()));
             mReleaseDateView.setText(result.getReleaseDate());
 
-            Picasso.with(itemView.getContext())
+            Picasso.get()
                     .load(MovieService.IMAGE_ENDPOINT + result.getPosterPath())
                     .into(mBackdrop);
         }
